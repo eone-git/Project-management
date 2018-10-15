@@ -1,1 +1,11 @@
 C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Project management.exe.config
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Project management.exe
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Project management.pdb
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Project management.xml
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.ProjectManagement.resources
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.Resources.resources
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.vbproj.GenerateResource.Cache
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.exe
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.xml
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.pdb
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.exe.licenses
