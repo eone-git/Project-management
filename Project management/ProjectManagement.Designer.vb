@@ -23,9 +23,9 @@ Partial Class ProjectManagement
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim UltraDataColumn7 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("ProjectID")
-        Dim UltraDataColumn8 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("ProjectName")
-        Dim UltraDataColumn9 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Path")
+        Dim UltraDataColumn1 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("ProjectID")
+        Dim UltraDataColumn2 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("ProjectName")
+        Dim UltraDataColumn3 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Path")
         Dim Appearance13 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim UltraGridBand1 As Infragistics.Win.UltraWinGrid.UltraGridBand = New Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1)
         Dim UltraGridColumn4 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("ProjectID")
@@ -53,6 +53,7 @@ Partial Class ProjectManagement
         Me.UltraDataSource1 = New Infragistics.Win.UltraWinDataSource.UltraDataSource(Me.components)
         Me.ucmbProjectName = New Infragistics.Win.UltraWinGrid.UltraCombo()
         Me.cmbProjectName = New System.Windows.Forms.ComboBox()
+        Me.btnRunProgram = New System.Windows.Forms.Button()
         CType(Me.UltraDataSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ucmbProjectName, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -123,18 +124,19 @@ Partial Class ProjectManagement
         Me.btnLoadProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLoadProject.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLoadProject.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.btnLoadProject.Location = New System.Drawing.Point(64, 227)
+        Me.btnLoadProject.Location = New System.Drawing.Point(15, 227)
         Me.btnLoadProject.Name = "btnLoadProject"
-        Me.btnLoadProject.Size = New System.Drawing.Size(113, 23)
+        Me.btnLoadProject.Size = New System.Drawing.Size(104, 23)
         Me.btnLoadProject.TabIndex = 2
         Me.btnLoadProject.Text = "Load Project"
         Me.btnLoadProject.UseVisualStyleBackColor = True
         '
         'UltraDataSource1
         '
-        Me.UltraDataSource1.Band.Columns.AddRange(New Object() {UltraDataColumn7, UltraDataColumn8, UltraDataColumn9})
+        Me.UltraDataSource1.Band.Columns.AddRange(New Object() {UltraDataColumn1, UltraDataColumn2, UltraDataColumn3})
         Me.UltraDataSource1.Rows.AddRange(New Object() {New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ProjectID", Object), CType("1", Object), CType("ProjectName", Object), CType("Main Branch", Object), CType("Path", Object), CType("D:\SPIL Glass Main Projects\SPIL Glass Branch For Live\SPIL Glass\SPIL_Glass\bin\" & _
-                            "Debug\SQLparaNew.txt", Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ProjectID", Object), CType("2", Object), CType("ProjectName", Object), CType("Main", Object), CType("Path", Object), CType("D:\SPIL Glass Main Projects\SPIL Glass Live\SPIL Glass\SPIL_Glass\bin\Debug", Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ProjectID", Object), CType("3", Object), CType("ProjectName", Object), CType("USA Branch", Object), CType("Path", Object), CType("D:\SPIL Glass Main Projects\New folder (3)\SPIL Glass\SPIL_Glass\bin\Debug", Object)})})
+                            "Debug\", Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ProjectID", Object), CType("2", Object), CType("ProjectName", Object), CType("Main", Object), CType("Path", Object), CType("D:\SPIL Glass Main Projects\SPIL Glass Live\SPIL Glass\SPIL_Glass\bin\Debug\", Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ProjectID", Object), CType("3", Object), CType("ProjectName", Object), CType("USA Branch", Object), CType("Path", Object), CType("D:\SPIL Glass Main Projects\New folder (3)\SPIL Glass\SPIL_Glass\bin\Debug\", Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ProjectID", Object), CType("4", Object), CType("ProjectName", Object), CType("Chevron", Object), CType("Path", Object), CType("D:\SPIL Glass Main Projects\SPIL Glass Chevron Active\Evolution_Custom\Evolution_" & _
+                            "Custom\bin\Debug\", Object)})})
         '
         'ucmbProjectName
         '
@@ -144,8 +146,11 @@ Partial Class ProjectManagement
         Me.ucmbProjectName.DisplayLayout.Appearance = Appearance13
         Me.ucmbProjectName.DisplayLayout.AutoFitStyle = Infragistics.Win.UltraWinGrid.AutoFitStyle.ResizeAllColumns
         UltraGridColumn4.Header.VisiblePosition = 2
+        UltraGridColumn4.Width = 64
         UltraGridColumn5.Header.VisiblePosition = 0
+        UltraGridColumn5.Width = 65
         UltraGridColumn6.Header.VisiblePosition = 1
+        UltraGridColumn6.Width = 62
         UltraGridBand1.Columns.AddRange(New Object() {UltraGridColumn4, UltraGridColumn5, UltraGridColumn6})
         Me.ucmbProjectName.DisplayLayout.BandsSerializer.Add(UltraGridBand1)
         Me.ucmbProjectName.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
@@ -218,6 +223,19 @@ Partial Class ProjectManagement
         Me.cmbProjectName.TabIndex = 0
         Me.cmbProjectName.Visible = False
         '
+        'btnRunProgram
+        '
+        Me.btnRunProgram.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue
+        Me.btnRunProgram.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRunProgram.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRunProgram.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnRunProgram.Location = New System.Drawing.Point(117, 227)
+        Me.btnRunProgram.Name = "btnRunProgram"
+        Me.btnRunProgram.Size = New System.Drawing.Size(105, 23)
+        Me.btnRunProgram.TabIndex = 2
+        Me.btnRunProgram.Text = "Run Program"
+        Me.btnRunProgram.UseVisualStyleBackColor = True
+        '
         'ProjectManagement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -225,6 +243,7 @@ Partial Class ProjectManagement
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(239, 262)
         Me.Controls.Add(Me.ucmbProjectName)
+        Me.Controls.Add(Me.btnRunProgram)
         Me.Controls.Add(Me.btnLoadProject)
         Me.Controls.Add(Me.lblSQLServer)
         Me.Controls.Add(Me.lblProjectName)
@@ -254,5 +273,6 @@ Partial Class ProjectManagement
     Friend WithEvents UltraDataSource1 As Infragistics.Win.UltraWinDataSource.UltraDataSource
     Friend WithEvents ucmbProjectName As Infragistics.Win.UltraWinGrid.UltraCombo
     Friend WithEvents cmbProjectName As System.Windows.Forms.ComboBox
+    Friend WithEvents btnRunProgram As System.Windows.Forms.Button
 
 End Class

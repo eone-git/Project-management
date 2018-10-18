@@ -150,7 +150,7 @@ Public Class ProjectManagement
 
     Sub CustomersDetails()
         Try
-
+          
         Catch ex As Exception
 
         End Try
@@ -203,7 +203,7 @@ Public Class ProjectManagement
                 dataToWrite = line
             Next
 
-            fileLocation = mainLocation & "SQLparaNew.txt"
+            fileLocation = ucmbProjectName.Value & "SQLparaNew.txt"
             WriteDataToFile(dataToWrite, fileLocation)
 
         Catch ex As Exception
@@ -222,6 +222,7 @@ Public Class ProjectManagement
     '''<summary> 
     '''Genaral file writer
     '''</summary>
+    ''' 
     Sub WriteDataToFile(ByRef dataToWrite As String, ByRef fileLocation As String)
         Try
             System.IO.File.WriteAllText(fileLocation, dataToWrite)
@@ -239,12 +240,50 @@ Public Class ProjectManagement
 
             'Load Project
             Dim proc As New System.Diagnostics.Process()
-            proc = Process.Start(mainLocation & "SPIL Glass.exe", "")
+            proc = Process.Start(ucmbProjectName.Value & "SPIL Glass.exe", "")
 
         Catch ex As Exception
 
         End Try
     End Sub
+
+    Sub RunTheSPUIlGlass()
+        Dim pathArray() As String
+        Dim mainPathForProject As String = ucmbProjectName.Value
+        Dim path As String = ""
+        Dim proc As New System.Diagnostics.Process()
+        Dim pathArrayCount As Integer
+        Dim counter As Integer = 0
+        Dim fileName() As String
+        Try
+            pathArray = mainPathForProject.Split(New Char() {"\"c})
+            pathArrayCount = pathArray.Count
+
+            For Each item As String In pathArray
+                If counter < pathArrayCount - 5 Then
+                    path = path & item & "\"
+                Else
+                    Exit For
+                End If
+                counter = counter + 1
+            Next
+
+            fileName = FindTheFileName(path)
+            proc = Process.Start(fileName(0), "")
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Function FindTheFileName(ByRef path As String) As String()
+        Dim files() As String = Nothing
+        Try
+            files = Directory.GetFiles(path, "*.sln", SearchOption.TopDirectoryOnly)
+            Return files
+        Catch ex As Exception
+            Return files
+        End Try
+    End Function
 
 #End Region
 #Region "Componets Events"
@@ -259,7 +298,7 @@ Public Class ProjectManagement
 
     Private Sub btnLoadProject_Click(sender As Object, e As EventArgs) Handles btnLoadProject.Click
         companyName = cmbComanyName.Text
-        LoadProject()
+        RunTheSPUIlGlass()
     End Sub
 
 #End Region
@@ -277,5 +316,14 @@ Public Class ProjectManagement
         ucmbProjectName.DisplayLayout.Bands(0).ColHeadersVisible = False
         ucmbProjectName.DisplayLayout.Bands(0).Columns(0).Hidden = True
         ucmbProjectName.DisplayLayout.Bands(0).Columns(2).Hidden = True
+    End Sub
+
+    Private Sub btnRunProgram_Click(sender As Object, e As EventArgs) Handles btnRunProgram.Click
+        Try
+            companyName = cmbComanyName.Text
+            LoadProject()
+        Catch ex As Exception
+
+        End Try
     End Sub
 End Class
