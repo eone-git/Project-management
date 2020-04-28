@@ -346,14 +346,15 @@ Public Class ProjectManagement
         RunTheSPUIlGlass()
     End Sub
 
+    Dim sqlInsName As String = 
+
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim sqlName As String = cmbSQLServer.Value
-        Process.Start("cmd.exe", "/k sqllocaldb STOP " & Chr(34) & sqlName.Replace("(localdb)\", "") & Chr(34))
+        Process.Start("cmd.exe", "/k sqllocaldb STOP " & Chr(34) & sqlInsName & Chr(34))
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim sqlName As String = cmbSQLServer.Value
-        Process.Start("cmd.exe", "/k sqllocaldb START " & Chr(34) & sqlName.Replace("(localdb)\", "") & Chr(34))
+        Process.Start("cmd.exe", "/k sqllocaldb START " & Chr(34) & sqlInsName & Chr(34))
     End Sub
 
     Private Sub ucmbProjectName_RowSelected(sender As Object, e As Infragistics.Win.UltraWinGrid.RowSelectedEventArgs) Handles ucmbProjectName.RowSelected
@@ -368,6 +369,8 @@ Public Class ProjectManagement
 
     Private Sub cmbSQLServer_RowSelected(sender As Object, e As Infragistics.Win.UltraWinGrid.RowSelectedEventArgs) Handles cmbSQLServer.RowSelected
         Try
+            sqlInsName = cmbSQLServer.Value.ToString.Replace("(localdb)\", "")
+
             sqlName = e.Row.Cells("path").Value
         Catch ex As Exception
 
