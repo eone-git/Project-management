@@ -347,11 +347,13 @@ Public Class ProjectManagement
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Process.Start("cmd.exe", "/k sqllocaldb STOP " & Chr(34) & "SQL SERVER 2017" & Chr(34))
+        Dim sqlName As String = cmbSQLServer.Value
+        Process.Start("cmd.exe", "/k sqllocaldb STOP " & Chr(34) & sqlName.Replace("(localdb)\", "") & Chr(34))
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Process.Start("cmd.exe", "/k sqllocaldb START " & Chr(34) & "SQL SERVER 2017" & Chr(34))
+        Dim sqlName As String = cmbSQLServer.Value
+        Process.Start("cmd.exe", "/k sqllocaldb START " & Chr(34) & sqlName.Replace("(localdb)\", "") & Chr(34))
     End Sub
 
     Private Sub ucmbProjectName_RowSelected(sender As Object, e As Infragistics.Win.UltraWinGrid.RowSelectedEventArgs) Handles ucmbProjectName.RowSelected

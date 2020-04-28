@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Project management.exe" version="1.0.0.9" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
-  <description asmv2:iconFile="book_MIt_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <asmv1:assemblyIdentity name="Project management.exe" version="1.0.0.8" publicKeyToken="7d369ae7efe0582b" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="web-management.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="Project management" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -103,14 +103,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Project management.exe" size="115640">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Project management.exe" size="82360">
       <assemblyIdentity name="Project management" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>yGgj5QDImEpwOa+y8frcYWyVYqlo8luJzMCS6wiqVU8=</dsig:DigestValue>
+        <dsig:DigestValue>g1PjR12Egkm0NZolLPSTuhN8QxmlJ+q4mM/cATJ7ffo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -122,7 +122,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QaryNE7e6NAlVu/tcIjIQYQdbI/MbQCE4YyGbcOU7p8=</dsig:DigestValue>
+        <dsig:DigestValue>ekNCK6Xjwr587+mCe38G7QuHkQU9RZymvppLctYaauY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -134,7 +134,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kWqfDKA4YhpNd63eaq7iSgC+wigB1p+pMsSZ8Tafsr8=</dsig:DigestValue>
+        <dsig:DigestValue>s0qllU/hrbYzEwUaw9WQPsOIKc1Insn9ZZ8RWnLLD8c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -146,19 +146,10 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>dKnQ/WX2Hy5QizRwVFdidpbyBncleDgQlwyB2xWV62Y=</dsig:DigestValue>
+        <dsig:DigestValue>qsZ/Y+k8f41Bg5LTCVxana3ZKupTh5B+uX/9Frv3yWg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="book_MIt_icon.ico" size="23558">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>2EM9BSkLLri7i7UHNwO+XU5zDMPPqAOsI4cbcubaxtU=</dsig:DigestValue>
-    </hash>
-  </file>
   <file name="DefaultData.txt" size="6">
     <hash>
       <dsig:Transforms>
@@ -212,4 +203,4 @@
       <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
     </application>
   </compatibility>
-</asmv1:assembly>
+<publisherIdentity name="CN=SPIL-PC13\SPIL" issuerKeyHash="008799bf299cfac3c949b233169bf47ad3a83b3b" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>SB/NypjAy68scF/adgy1SGqWKlq7beKpao4NWFUic/4=</DigestValue></Reference></SignedInfo><SignatureValue>XAstZK8y3WsLYgex4YatdSYIXfhmCWDXSMUks16cR2ivak10YvgzbGWuzPnWzoH6X7kIoeyZa1Wgl+Z/MYpHDFn5X+DebM29cm/aDpaH/bZP53Vh4brUk00XKq/EiX26+86a8XSNWNlWLyE04QNOl3pzY2yVRJlwOFUVnkzefmQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>0WT53xfRtl7/KlqtnKcTP8WAh+tzQzJvB8d7xc6uSMO851G6LnMfNTSc9FXrMICwROxQQrO4uzIm2CEmdTIR2UTyhcXJDZJoM2YssZntCfgzFVVXpgubJVsC3eKv1l+0EDynhweQLd4RsA0yJRRcZmcK5a0T7ASaKc0PPmBV9vU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="fe732255580d8e6aa9e26dbb5a2a966a48b50c76da5f702cafcbc098cacd1f48" Description="" Url=""><as:assemblyIdentity name="Project management.exe" version="1.0.0.8" publicKeyToken="7d369ae7efe0582b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SPIL-PC13\SPIL</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>gUKE97fiM/JYxF1n/re1gqT6jqi+supLNLPvkrjUe08=</DigestValue></Reference></SignedInfo><SignatureValue>DIwY2LI+M5Y9lUF6ME5Plmyvjs60rSKZm6ta2N367jAa0i+qrhxNFZHlwk5PCxcXRaqd/VTh5WeEgxTXBdX83V8Cj+JwvIqKnaNVwa8oPn9ciRTfHEWoW+7v+Y6BUoX/Ni3Xe4aqcZCqBXZIBlIhH/QBhjapEV6ceZ4vzvmoCkA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>0WT53xfRtl7/KlqtnKcTP8WAh+tzQzJvB8d7xc6uSMO851G6LnMfNTSc9FXrMICwROxQQrO4uzIm2CEmdTIR2UTyhcXJDZJoM2YssZntCfgzFVVXpgubJVsC3eKv1l+0EDynhweQLd4RsA0yJRRcZmcK5a0T7ASaKc0PPmBV9vU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQfKChmShXTJVGl4GCd05olDANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwAUwBQAEkATAAtAFAAQwAxADMAXABTAFAASQBMMB4XDTIwMDQyODA1NTE0N1oXDTIxMDQyODExNTE0N1owJzElMCMGA1UEAx4cAFMAUABJAEwALQBQAEMAMQAzAFwAUwBQAEkATDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA0WT53xfRtl7/KlqtnKcTP8WAh+tzQzJvB8d7xc6uSMO851G6LnMfNTSc9FXrMICwROxQQrO4uzIm2CEmdTIR2UTyhcXJDZJoM2YssZntCfgzFVVXpgubJVsC3eKv1l+0EDynhweQLd4RsA0yJRRcZmcK5a0T7ASaKc0PPmBV9vUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQBvYdoW/cr6EXBXSytoSffqg376C3QeE/cl14HFvNfxx34ZZswBahJ3cRfKlpcyTtUTf8kx+PKYxLz53MBR6kqCW2a9bme7+sYZKoz1VoIpsO59MKUMCLhNOtkfuRD1s+21cb5vvGc2+K2hI8xTpBAvOEx7iCQpjUb4o9NibLwIow==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

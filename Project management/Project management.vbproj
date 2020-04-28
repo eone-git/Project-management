@@ -32,7 +32,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationRevision>10</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -71,7 +71,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>web-management.ico</ApplicationIcon>
+    <ApplicationIcon>book_MIt_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
@@ -196,6 +196,7 @@
     <None Include="Project management_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="book_MIt_icon.ico" />
     <Content Include="Project management_ml.xml" />
     <Content Include="DefaultData.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
