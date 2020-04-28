@@ -380,8 +380,8 @@ Public Class ProjectManagement
     Sub SetBuutonText()
         Try
             sqlInsName = cmbSQLServer.Value.ToString.Replace("(localdb)\", "")
-            Button1.Text = "Start " & sqlInsName
-            Button2.Text = "Stop " & sqlInsName
+            Button1.Text = "Start server"
+            Button2.Text = "Stop server"
         Catch ex As Exception
 
         End Try
