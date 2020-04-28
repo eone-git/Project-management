@@ -1,5 +1,8 @@
 ﻿Imports System.IO
 Imports System.Data.SqlClient
+Imports Microsoft.SqlServer.Management.Smo
+Imports Infragistics.Win.UltraWinDataSource
+Imports Infragistics.Win.UltraWinGrid
 
 Public Class ProjectManagement
 
@@ -12,7 +15,7 @@ Public Class ProjectManagement
     Dim companyName As String
     Dim exeName As String
     Dim projectNames() As String
-
+    Dim defaultDataLocation As String = "DefaultData.txt"
     'Dim databaseName As String
     'Dim serverName As String
     'Dim userId As String
@@ -26,6 +29,7 @@ Public Class ProjectManagement
     Sub Load()
         Try
             LoadFormOpeningData()
+            MySub
         Catch ex As Exception
 
         End Try
@@ -232,14 +236,34 @@ Public Class ProjectManagement
         End Try
     End Sub
 
-    Sub SetSQLPara()
+    Sub SetSQLPara(ByRef targetFile As String)
         Try
+            Dim fileLocation As String
+            fileLocation = projectName & targetFile
+            Dim lines() As String = System.IO.File.ReadAllLines(fileLocation)
+
+            lines(3) = sqlName
+
+            System.IO.File.WriteAllLines(fileLocation, lines)
 
         Catch ex As Exception
 
         End Try
     End Sub
 
+
+     Sub SetDefault()
+        Try
+            Dim lines() As String = System.IO.File.ReadAllLines(defaultDataLocation)
+
+            lines(0) = ucmbProjectName.SelectedRow.Cells("ID").Value & "," & cmbSQLServer.SelectedRow.Cells("ID").Value
+
+            System.IO.File.WriteAllLines(defaultDataLocation, lines)
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
     '''<summary> 
     '''Genaral file writer
     '''</summary>
@@ -256,9 +280,9 @@ Public Class ProjectManagement
         Try
             'Set SetSQLparaNew        
             SetSQLparaNew("SQLparaNew.txt", "ComanyData.txt")
-
+            SetSQLPara("SQLpara.txt")
             'Set SetSQLpara
-
+            SetDefault()
             'Load Project
             Dim proc As New System.Diagnostics.Process()
             proc = Process.Start(ucmbProjectName.Value & "\SPIL Glass.exe", "")
@@ -332,7 +356,7 @@ Public Class ProjectManagement
 
     Private Sub ucmbProjectName_RowSelected(sender As Object, e As Infragistics.Win.UltraWinGrid.RowSelectedEventArgs) Handles ucmbProjectName.RowSelected
         Try
-            projectName = e.Row.Cells("path").Value & "\"
+            projectName = e.Row.Cells("path").Value ' & "\"
             LoadCompanyNames()
         Catch ex As Exception
 
@@ -340,10 +364,24 @@ Public Class ProjectManagement
 
     End Sub
 
+    Private Sub cmbSQLServer_RowSelected(sender As Object, e As Infragistics.Win.UltraWinGrid.RowSelectedEventArgs) Handles cmbSQLServer.RowSelected
+        Try
+            sqlName = e.Row.Cells("path").Value
+        Catch ex As Exception
+
+        End Try
+
+    End Sub
     Private Sub ucmbProjectName_InitializeLayout(sender As Object, e As Infragistics.Win.UltraWinGrid.InitializeLayoutEventArgs) Handles ucmbProjectName.InitializeLayout
         ucmbProjectName.DisplayLayout.Bands(0).ColHeadersVisible = False
         ucmbProjectName.DisplayLayout.Bands(0).Columns(0).Hidden = True
         ucmbProjectName.DisplayLayout.Bands(0).Columns(2).Hidden = True
+    End Sub
+
+    Private Sub cmbSQLServer_InitializeLayout(sender As Object, e As Infragistics.Win.UltraWinGrid.InitializeLayoutEventArgs) Handles cmbSQLServer.InitializeLayout
+        cmbSQLServer.DisplayLayout.Bands(0).ColHeadersVisible = False
+        cmbSQLServer.DisplayLayout.Bands(0).Columns(0).Hidden = True
+        cmbSQLServer.DisplayLayout.Bands(0).Columns(2).Hidden = True
     End Sub
 
     Private Sub btnRunProgram_Click(sender As Object, e As EventArgs) Handles btnRunProgram.Click
@@ -409,7 +447,30 @@ Public Class ProjectManagement
         End Try
     End Sub
 
+    Sub MySub()
+        Try
+ 
+            Dim lines() As String = System.IO.File.ReadAllLines(defaultDataLocation)
+            Dim defaultArray() As String
+            For Each item As String In lines
+                defaultArray = item.Split(",")
+                For Each row As UltraGridRow In cmbSQLServer.Rows
+                    If row.Cells("ID").Value = defaultArray(1) Then
+                        cmbSQLServer.ActiveRow = row
+                    End If
+                Next
+                For Each row As UltraGridRow In ucmbProjectName.Rows
+                    If row.Cells("ID").Value = defaultArray(0) Then
+                        ucmbProjectName.ActiveRow = row
+                    End If
+                Next
+            Next
+            System.IO.File.WriteAllLines(defaultDataLocation, lines)
+        Catch ex As Exception
 
+        End Try
+
+    End Sub
 
 
 End Class

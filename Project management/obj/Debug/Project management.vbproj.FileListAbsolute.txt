@@ -61,3 +61,9 @@ H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project m
 H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.exe
 H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.xml
 H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.pdb
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\DefaultData.txt
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Project management.exe.manifest
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Project management.application
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.TrustInfo.xml
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.exe.manifest
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.application

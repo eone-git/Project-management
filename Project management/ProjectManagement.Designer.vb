@@ -24,27 +24,45 @@ Partial Class ProjectManagement
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ProjectManagement))
-        Dim UltraDataColumn1 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("ProjectID")
+        Dim UltraDataColumn1 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("ID")
         Dim UltraDataColumn2 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("ProjectName")
         Dim UltraDataColumn3 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Path")
-        Dim Appearance13 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance25 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim UltraGridBand1 As Infragistics.Win.UltraWinGrid.UltraGridBand = New Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1)
-        Dim UltraGridColumn1 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("ProjectID")
+        Dim UltraGridColumn1 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("ID")
         Dim UltraGridColumn2 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("ProjectName")
         Dim UltraGridColumn3 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("Path")
-        Dim Appearance14 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance15 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance16 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance17 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance18 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance19 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance20 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance21 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance22 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance23 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance24 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance26 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance27 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance28 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance29 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance30 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance31 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance32 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance33 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance34 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance35 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance36 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim UltraDataColumn4 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("ID")
+        Dim UltraDataColumn5 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("SqlServerName")
+        Dim UltraDataColumn6 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Path")
+        Dim Appearance1 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim UltraGridBand2 As Infragistics.Win.UltraWinGrid.UltraGridBand = New Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1)
+        Dim UltraGridColumn4 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("ID")
+        Dim UltraGridColumn5 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("SqlServerName")
+        Dim UltraGridColumn6 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("Path")
+        Dim Appearance2 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance3 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance4 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance5 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance6 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance7 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance8 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance9 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance10 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance11 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance12 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Me.cmbComanyName = New System.Windows.Forms.ComboBox()
-        Me.cmbSQLServer = New System.Windows.Forms.ComboBox()
         Me.lblCompanyName = New System.Windows.Forms.Label()
         Me.cmbExe = New System.Windows.Forms.ComboBox()
         Me.lblExe = New System.Windows.Forms.Label()
@@ -57,21 +75,19 @@ Partial Class ProjectManagement
         Me.btnRunProgram = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        CType(Me.UltraDataSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ucmbProjectName, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        Me.UltraDataSource2 = New Infragistics.Win.UltraWinDataSource.UltraDataSource(Me.components)
+        Me.cmbSQLServer = New Infragistics.Win.UltraWinGrid.UltraCombo()
+        CType(Me.UltraDataSource1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.ucmbProjectName,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.UltraDataSource2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.cmbSQLServer,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'cmbComanyName
         '
-        Me.cmbComanyName.FormattingEnabled = True
+        Me.cmbComanyName.FormattingEnabled = true
         resources.ApplyResources(Me.cmbComanyName, "cmbComanyName")
         Me.cmbComanyName.Name = "cmbComanyName"
-        '
-        'cmbSQLServer
-        '
-        Me.cmbSQLServer.FormattingEnabled = True
-        resources.ApplyResources(Me.cmbSQLServer, "cmbSQLServer")
-        Me.cmbSQLServer.Name = "cmbSQLServer"
         '
         'lblCompanyName
         '
@@ -80,7 +96,7 @@ Partial Class ProjectManagement
         '
         'cmbExe
         '
-        Me.cmbExe.FormattingEnabled = True
+        Me.cmbExe.FormattingEnabled = true
         resources.ApplyResources(Me.cmbExe, "cmbExe")
         Me.cmbExe.Name = "cmbExe"
         '
@@ -105,114 +121,114 @@ Partial Class ProjectManagement
         resources.ApplyResources(Me.btnLoadProject, "btnLoadProject")
         Me.btnLoadProject.ForeColor = System.Drawing.Color.DodgerBlue
         Me.btnLoadProject.Name = "btnLoadProject"
-        Me.btnLoadProject.UseVisualStyleBackColor = True
+        Me.btnLoadProject.UseVisualStyleBackColor = true
         '
         'UltraDataSource1
         '
         Me.UltraDataSource1.Band.Columns.AddRange(New Object() {UltraDataColumn1, UltraDataColumn2, UltraDataColumn3})
-        Me.UltraDataSource1.Rows.AddRange(New Object() {New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ProjectID", Object), CType("1", Object), CType("ProjectName", Object), CType("Main Branch", Object), CType("Path", Object), CType("D:\SPIL Glass Main Projects\SPIL Glass Branch For Live\SPIL Glass\SPIL_Glass\bin\" & _
-                            "Debug\", Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ProjectID", Object), CType("2", Object), CType("ProjectName", Object), CType("Main", Object), CType("Path", Object), CType("D:\SPIL Glass Main Projects\SPIL Glass Live\SPIL Glass\SPIL_Glass\bin\Debug\", Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ProjectID", Object), CType("3", Object), CType("ProjectName", Object), CType("USA Branch", Object), CType("Path", Object), CType("D:\SPIL Glass Main Projects\New folder (3)\SPIL Glass\SPIL_Glass\bin\Debug\", Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ProjectID", Object), CType("4", Object), CType("ProjectName", Object), CType("Chevron", Object), CType("Path", Object), CType("D:\SPIL Glass Main Projects\SPIL Glass Chevron Active\Evolution_Custom\Evolution_" & _
-                            "Custom\bin\Debug\", Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ProjectID", Object), CType("5", Object), CType("ProjectName", Object), CType("Lite", Object), CType("Path", Object), CType("D:\SPIL Glass Main Projects\SPIL Glass Lite\SPIL Glass\SPIL Glass\SPIL_Glass\bin\" & _
-                            "Debug", Object)})})
+        Me.UltraDataSource1.Rows.AddRange(New Object() {New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("1",Object), CType("ProjectName",Object), CType("Main Branch",Object), CType("Path",Object), CType("D:\SPIL Glass Main Projects\SPIL Glass Branch For Live\SPIL Glass\SPIL_Glass\bin\"& _ 
+                            "Debug\",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("2",Object), CType("ProjectName",Object), CType("Main",Object), CType("Path",Object), CType("D:\SPIL Glass Main Projects\SPIL Glass Live\SPIL Glass\SPIL_Glass\bin\Debug\",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("3",Object), CType("ProjectName",Object), CType("USA Branch",Object), CType("Path",Object), CType("D:\SPIL Glass Main Projects\New folder (3)\SPIL Glass\SPIL_Glass\bin\Debug\",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("4",Object), CType("ProjectName",Object), CType("Chevron",Object), CType("Path",Object), CType("D:\SPIL Glass Main Projects\SPIL Glass Chevron Active\Evolution_Custom\Evolution_"& _ 
+                            "Custom\bin\Debug\",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("5",Object), CType("ProjectName",Object), CType("Lite",Object), CType("Path",Object), CType("D:\SPIL Glass Main Projects\SPIL Glass Lite\SPIL Glass\SPIL Glass\SPIL_Glass\bin\"& _ 
+                            "Debug",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("6",Object), CType("ProjectName",Object), CType("GIT Main Branch",Object), CType("Path",Object), CType("O:\SPIL\Source\Repos\SPIL Glass\SPIL Glass\SPIL_Glass\bin\Debug\",Object)})})
         '
         'ucmbProjectName
         '
         Me.ucmbProjectName.DataSource = Me.UltraDataSource1
-        Appearance13.BackColor = System.Drawing.SystemColors.Window
-        Appearance13.BorderColor = System.Drawing.SystemColors.InactiveCaption
-        resources.ApplyResources(Appearance13.FontData, "Appearance13.FontData")
-        resources.ApplyResources(Appearance13, "Appearance13")
-        Appearance13.ForceApplyResources = "FontData|"
-        Me.ucmbProjectName.DisplayLayout.Appearance = Appearance13
+        Appearance25.BackColor = System.Drawing.SystemColors.Window
+        Appearance25.BorderColor = System.Drawing.SystemColors.InactiveCaption
+        resources.ApplyResources(Appearance25.FontData, "Appearance25.FontData")
+        resources.ApplyResources(Appearance25, "Appearance25")
+        Appearance25.ForceApplyResources = "FontData|"
+        Me.ucmbProjectName.DisplayLayout.Appearance = Appearance25
         Me.ucmbProjectName.DisplayLayout.AutoFitStyle = Infragistics.Win.UltraWinGrid.AutoFitStyle.ResizeAllColumns
         UltraGridColumn1.Header.VisiblePosition = 2
-        UltraGridColumn1.Width = 64
+        UltraGridColumn1.Width = 86
         UltraGridColumn2.Header.VisiblePosition = 0
-        UltraGridColumn2.Width = 69
+        UltraGridColumn2.Width = 94
         UltraGridColumn3.Header.VisiblePosition = 1
-        UltraGridColumn3.Width = 58
+        UltraGridColumn3.Width = 77
         UltraGridBand1.Columns.AddRange(New Object() {UltraGridColumn1, UltraGridColumn2, UltraGridColumn3})
         Me.ucmbProjectName.DisplayLayout.BandsSerializer.Add(UltraGridBand1)
         Me.ucmbProjectName.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
         Me.ucmbProjectName.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.[False]
-        Appearance14.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Appearance14.BackColor2 = System.Drawing.SystemColors.ControlDark
-        Appearance14.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
-        Appearance14.BorderColor = System.Drawing.SystemColors.Window
-        resources.ApplyResources(Appearance14.FontData, "Appearance14.FontData")
-        resources.ApplyResources(Appearance14, "Appearance14")
-        Appearance14.ForceApplyResources = "FontData|"
-        Me.ucmbProjectName.DisplayLayout.GroupByBox.Appearance = Appearance14
-        Appearance15.ForeColor = System.Drawing.SystemColors.GrayText
-        resources.ApplyResources(Appearance15.FontData, "Appearance15.FontData")
-        resources.ApplyResources(Appearance15, "Appearance15")
-        Appearance15.ForceApplyResources = "FontData|"
-        Me.ucmbProjectName.DisplayLayout.GroupByBox.BandLabelAppearance = Appearance15
+        Appearance26.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Appearance26.BackColor2 = System.Drawing.SystemColors.ControlDark
+        Appearance26.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
+        Appearance26.BorderColor = System.Drawing.SystemColors.Window
+        resources.ApplyResources(Appearance26.FontData, "Appearance26.FontData")
+        resources.ApplyResources(Appearance26, "Appearance26")
+        Appearance26.ForceApplyResources = "FontData|"
+        Me.ucmbProjectName.DisplayLayout.GroupByBox.Appearance = Appearance26
+        Appearance27.ForeColor = System.Drawing.SystemColors.GrayText
+        resources.ApplyResources(Appearance27.FontData, "Appearance27.FontData")
+        resources.ApplyResources(Appearance27, "Appearance27")
+        Appearance27.ForceApplyResources = "FontData|"
+        Me.ucmbProjectName.DisplayLayout.GroupByBox.BandLabelAppearance = Appearance27
         Me.ucmbProjectName.DisplayLayout.GroupByBox.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
-        Appearance16.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Appearance16.BackColor2 = System.Drawing.SystemColors.Control
-        Appearance16.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
-        Appearance16.ForeColor = System.Drawing.SystemColors.GrayText
-        resources.ApplyResources(Appearance16.FontData, "Appearance16.FontData")
-        resources.ApplyResources(Appearance16, "Appearance16")
-        Appearance16.ForceApplyResources = "FontData|"
-        Me.ucmbProjectName.DisplayLayout.GroupByBox.PromptAppearance = Appearance16
+        Appearance28.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Appearance28.BackColor2 = System.Drawing.SystemColors.Control
+        Appearance28.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
+        Appearance28.ForeColor = System.Drawing.SystemColors.GrayText
+        resources.ApplyResources(Appearance28.FontData, "Appearance28.FontData")
+        resources.ApplyResources(Appearance28, "Appearance28")
+        Appearance28.ForceApplyResources = "FontData|"
+        Me.ucmbProjectName.DisplayLayout.GroupByBox.PromptAppearance = Appearance28
         Me.ucmbProjectName.DisplayLayout.MaxColScrollRegions = 1
         Me.ucmbProjectName.DisplayLayout.MaxRowScrollRegions = 1
-        Appearance17.BackColor = System.Drawing.SystemColors.Window
-        Appearance17.ForeColor = System.Drawing.SystemColors.ControlText
-        resources.ApplyResources(Appearance17.FontData, "Appearance17.FontData")
-        resources.ApplyResources(Appearance17, "Appearance17")
-        Appearance17.ForceApplyResources = "FontData|"
-        Me.ucmbProjectName.DisplayLayout.Override.ActiveCellAppearance = Appearance17
-        Appearance18.BackColor = System.Drawing.SystemColors.Highlight
-        Appearance18.ForeColor = System.Drawing.SystemColors.HighlightText
-        resources.ApplyResources(Appearance18.FontData, "Appearance18.FontData")
-        resources.ApplyResources(Appearance18, "Appearance18")
-        Appearance18.ForceApplyResources = "FontData|"
-        Me.ucmbProjectName.DisplayLayout.Override.ActiveRowAppearance = Appearance18
+        Appearance29.BackColor = System.Drawing.SystemColors.Window
+        Appearance29.ForeColor = System.Drawing.SystemColors.ControlText
+        resources.ApplyResources(Appearance29.FontData, "Appearance29.FontData")
+        resources.ApplyResources(Appearance29, "Appearance29")
+        Appearance29.ForceApplyResources = "FontData|"
+        Me.ucmbProjectName.DisplayLayout.Override.ActiveCellAppearance = Appearance29
+        Appearance30.BackColor = System.Drawing.SystemColors.Highlight
+        Appearance30.ForeColor = System.Drawing.SystemColors.HighlightText
+        resources.ApplyResources(Appearance30.FontData, "Appearance30.FontData")
+        resources.ApplyResources(Appearance30, "Appearance30")
+        Appearance30.ForceApplyResources = "FontData|"
+        Me.ucmbProjectName.DisplayLayout.Override.ActiveRowAppearance = Appearance30
         Me.ucmbProjectName.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.Dotted
         Me.ucmbProjectName.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.Dotted
-        Appearance19.BackColor = System.Drawing.SystemColors.Window
-        resources.ApplyResources(Appearance19.FontData, "Appearance19.FontData")
-        resources.ApplyResources(Appearance19, "Appearance19")
-        Appearance19.ForceApplyResources = "FontData|"
-        Me.ucmbProjectName.DisplayLayout.Override.CardAreaAppearance = Appearance19
-        Appearance20.BorderColor = System.Drawing.Color.Silver
-        Appearance20.TextTrimming = Infragistics.Win.TextTrimming.EllipsisCharacter
-        resources.ApplyResources(Appearance20.FontData, "Appearance20.FontData")
-        resources.ApplyResources(Appearance20, "Appearance20")
-        Appearance20.ForceApplyResources = "FontData|"
-        Me.ucmbProjectName.DisplayLayout.Override.CellAppearance = Appearance20
+        Appearance31.BackColor = System.Drawing.SystemColors.Window
+        resources.ApplyResources(Appearance31.FontData, "Appearance31.FontData")
+        resources.ApplyResources(Appearance31, "Appearance31")
+        Appearance31.ForceApplyResources = "FontData|"
+        Me.ucmbProjectName.DisplayLayout.Override.CardAreaAppearance = Appearance31
+        Appearance32.BorderColor = System.Drawing.Color.Silver
+        Appearance32.TextTrimming = Infragistics.Win.TextTrimming.EllipsisCharacter
+        resources.ApplyResources(Appearance32.FontData, "Appearance32.FontData")
+        resources.ApplyResources(Appearance32, "Appearance32")
+        Appearance32.ForceApplyResources = "FontData|"
+        Me.ucmbProjectName.DisplayLayout.Override.CellAppearance = Appearance32
         Me.ucmbProjectName.DisplayLayout.Override.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.EditAndSelectText
         Me.ucmbProjectName.DisplayLayout.Override.CellPadding = 0
-        Appearance21.BackColor = System.Drawing.SystemColors.Control
-        Appearance21.BackColor2 = System.Drawing.SystemColors.ControlDark
-        Appearance21.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element
-        Appearance21.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
-        Appearance21.BorderColor = System.Drawing.SystemColors.Window
-        resources.ApplyResources(Appearance21.FontData, "Appearance21.FontData")
-        resources.ApplyResources(Appearance21, "Appearance21")
-        Appearance21.ForceApplyResources = "FontData|"
-        Me.ucmbProjectName.DisplayLayout.Override.GroupByRowAppearance = Appearance21
-        resources.ApplyResources(Appearance22, "Appearance22")
-        resources.ApplyResources(Appearance22.FontData, "Appearance22.FontData")
-        Appearance22.ForceApplyResources = "FontData|"
-        Me.ucmbProjectName.DisplayLayout.Override.HeaderAppearance = Appearance22
+        Appearance33.BackColor = System.Drawing.SystemColors.Control
+        Appearance33.BackColor2 = System.Drawing.SystemColors.ControlDark
+        Appearance33.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element
+        Appearance33.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
+        Appearance33.BorderColor = System.Drawing.SystemColors.Window
+        resources.ApplyResources(Appearance33.FontData, "Appearance33.FontData")
+        resources.ApplyResources(Appearance33, "Appearance33")
+        Appearance33.ForceApplyResources = "FontData|"
+        Me.ucmbProjectName.DisplayLayout.Override.GroupByRowAppearance = Appearance33
+        resources.ApplyResources(Appearance34, "Appearance34")
+        resources.ApplyResources(Appearance34.FontData, "Appearance34.FontData")
+        Appearance34.ForceApplyResources = "FontData|"
+        Me.ucmbProjectName.DisplayLayout.Override.HeaderAppearance = Appearance34
         Me.ucmbProjectName.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti
         Me.ucmbProjectName.DisplayLayout.Override.HeaderStyle = Infragistics.Win.HeaderStyle.WindowsXPCommand
-        Appearance23.BackColor = System.Drawing.SystemColors.Window
-        Appearance23.BorderColor = System.Drawing.Color.Silver
-        resources.ApplyResources(Appearance23.FontData, "Appearance23.FontData")
-        resources.ApplyResources(Appearance23, "Appearance23")
-        Appearance23.ForceApplyResources = "FontData|"
-        Me.ucmbProjectName.DisplayLayout.Override.RowAppearance = Appearance23
+        Appearance35.BackColor = System.Drawing.SystemColors.Window
+        Appearance35.BorderColor = System.Drawing.Color.Silver
+        resources.ApplyResources(Appearance35.FontData, "Appearance35.FontData")
+        resources.ApplyResources(Appearance35, "Appearance35")
+        Appearance35.ForceApplyResources = "FontData|"
+        Me.ucmbProjectName.DisplayLayout.Override.RowAppearance = Appearance35
         Me.ucmbProjectName.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.[False]
-        Appearance24.BackColor = System.Drawing.SystemColors.ControlLight
-        resources.ApplyResources(Appearance24.FontData, "Appearance24.FontData")
-        resources.ApplyResources(Appearance24, "Appearance24")
-        Appearance24.ForceApplyResources = "FontData|"
-        Me.ucmbProjectName.DisplayLayout.Override.TemplateAddRowAppearance = Appearance24
+        Appearance36.BackColor = System.Drawing.SystemColors.ControlLight
+        resources.ApplyResources(Appearance36.FontData, "Appearance36.FontData")
+        resources.ApplyResources(Appearance36, "Appearance36")
+        Appearance36.ForceApplyResources = "FontData|"
+        Me.ucmbProjectName.DisplayLayout.Override.TemplateAddRowAppearance = Appearance36
         Me.ucmbProjectName.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill
         Me.ucmbProjectName.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate
         Me.ucmbProjectName.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy
@@ -223,8 +239,8 @@ Partial Class ProjectManagement
         '
         'cmbProjectName
         '
-        Me.cmbProjectName.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.UltraDataSource1, "Band 0.Path", True))
-        Me.cmbProjectName.FormattingEnabled = True
+        Me.cmbProjectName.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.UltraDataSource1, "Band 0.Path", true))
+        Me.cmbProjectName.FormattingEnabled = true
         resources.ApplyResources(Me.cmbProjectName, "cmbProjectName")
         Me.cmbProjectName.Name = "cmbProjectName"
         '
@@ -234,7 +250,7 @@ Partial Class ProjectManagement
         resources.ApplyResources(Me.btnRunProgram, "btnRunProgram")
         Me.btnRunProgram.ForeColor = System.Drawing.Color.DodgerBlue
         Me.btnRunProgram.Name = "btnRunProgram"
-        Me.btnRunProgram.UseVisualStyleBackColor = True
+        Me.btnRunProgram.UseVisualStyleBackColor = true
         '
         'Button1
         '
@@ -242,7 +258,7 @@ Partial Class ProjectManagement
         resources.ApplyResources(Me.Button1, "Button1")
         Me.Button1.ForeColor = System.Drawing.Color.DodgerBlue
         Me.Button1.Name = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = true
         '
         'Button2
         '
@@ -250,13 +266,125 @@ Partial Class ProjectManagement
         resources.ApplyResources(Me.Button2, "Button2")
         Me.Button2.ForeColor = System.Drawing.Color.DodgerBlue
         Me.Button2.Name = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = true
+        '
+        'UltraDataSource2
+        '
+        Me.UltraDataSource2.Band.Columns.AddRange(New Object() {UltraDataColumn4, UltraDataColumn5, UltraDataColumn6})
+        Me.UltraDataSource2.Rows.AddRange(New Object() {New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("1",Object), CType("SqlServerName",Object), CType("SQL 2014",Object), CType("Path",Object), CType("SPIL-PC13\MSSQLSERVER2014",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("2",Object), CType("SqlServerName",Object), CType("Local DB SQL 2017",Object), CType("Path",Object), CType("(localdb)\SQL SERVER 2017",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("3",Object), CType("SqlServerName",Object), CType("Local DB SQL 2019",Object), CType("Path",Object), CType("(localdb)\sql_2019",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("4",Object), CType("SqlServerName",Object), CType("SQL 2019",Object), CType("Path",Object), CType("SPIL-PC13\MS_SQL_2019",Object)})})
+        '
+        'cmbSQLServer
+        '
+        Me.cmbSQLServer.DataSource = Me.UltraDataSource2
+        Appearance1.BackColor = System.Drawing.SystemColors.Window
+        Appearance1.BorderColor = System.Drawing.SystemColors.InactiveCaption
+        resources.ApplyResources(Appearance1.FontData, "Appearance1.FontData")
+        resources.ApplyResources(Appearance1, "Appearance1")
+        Appearance1.ForceApplyResources = "FontData|"
+        Me.cmbSQLServer.DisplayLayout.Appearance = Appearance1
+        Me.cmbSQLServer.DisplayLayout.AutoFitStyle = Infragistics.Win.UltraWinGrid.AutoFitStyle.ResizeAllColumns
+        UltraGridColumn4.Header.VisiblePosition = 0
+        UltraGridColumn4.Width = 97
+        UltraGridColumn5.Header.VisiblePosition = 1
+        UltraGridColumn5.Width = 98
+        UltraGridColumn6.Header.VisiblePosition = 2
+        UltraGridColumn6.Width = 62
+        UltraGridBand2.Columns.AddRange(New Object() {UltraGridColumn4, UltraGridColumn5, UltraGridColumn6})
+        Me.cmbSQLServer.DisplayLayout.BandsSerializer.Add(UltraGridBand2)
+        Me.cmbSQLServer.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
+        Me.cmbSQLServer.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.[False]
+        Appearance2.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Appearance2.BackColor2 = System.Drawing.SystemColors.ControlDark
+        Appearance2.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
+        Appearance2.BorderColor = System.Drawing.SystemColors.Window
+        resources.ApplyResources(Appearance2.FontData, "Appearance2.FontData")
+        resources.ApplyResources(Appearance2, "Appearance2")
+        Appearance2.ForceApplyResources = "FontData|"
+        Me.cmbSQLServer.DisplayLayout.GroupByBox.Appearance = Appearance2
+        Appearance3.ForeColor = System.Drawing.SystemColors.GrayText
+        resources.ApplyResources(Appearance3.FontData, "Appearance3.FontData")
+        resources.ApplyResources(Appearance3, "Appearance3")
+        Appearance3.ForceApplyResources = "FontData|"
+        Me.cmbSQLServer.DisplayLayout.GroupByBox.BandLabelAppearance = Appearance3
+        Me.cmbSQLServer.DisplayLayout.GroupByBox.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
+        Appearance4.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Appearance4.BackColor2 = System.Drawing.SystemColors.Control
+        Appearance4.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
+        Appearance4.ForeColor = System.Drawing.SystemColors.GrayText
+        resources.ApplyResources(Appearance4.FontData, "Appearance4.FontData")
+        resources.ApplyResources(Appearance4, "Appearance4")
+        Appearance4.ForceApplyResources = "FontData|"
+        Me.cmbSQLServer.DisplayLayout.GroupByBox.PromptAppearance = Appearance4
+        Me.cmbSQLServer.DisplayLayout.MaxColScrollRegions = 1
+        Me.cmbSQLServer.DisplayLayout.MaxRowScrollRegions = 1
+        Appearance5.BackColor = System.Drawing.SystemColors.Window
+        Appearance5.ForeColor = System.Drawing.SystemColors.ControlText
+        resources.ApplyResources(Appearance5.FontData, "Appearance5.FontData")
+        resources.ApplyResources(Appearance5, "Appearance5")
+        Appearance5.ForceApplyResources = "FontData|"
+        Me.cmbSQLServer.DisplayLayout.Override.ActiveCellAppearance = Appearance5
+        Appearance6.BackColor = System.Drawing.SystemColors.Highlight
+        Appearance6.ForeColor = System.Drawing.SystemColors.HighlightText
+        resources.ApplyResources(Appearance6.FontData, "Appearance6.FontData")
+        resources.ApplyResources(Appearance6, "Appearance6")
+        Appearance6.ForceApplyResources = "FontData|"
+        Me.cmbSQLServer.DisplayLayout.Override.ActiveRowAppearance = Appearance6
+        Me.cmbSQLServer.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.Dotted
+        Me.cmbSQLServer.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.Dotted
+        Appearance7.BackColor = System.Drawing.SystemColors.Window
+        resources.ApplyResources(Appearance7.FontData, "Appearance7.FontData")
+        resources.ApplyResources(Appearance7, "Appearance7")
+        Appearance7.ForceApplyResources = "FontData|"
+        Me.cmbSQLServer.DisplayLayout.Override.CardAreaAppearance = Appearance7
+        Appearance8.BorderColor = System.Drawing.Color.Silver
+        Appearance8.TextTrimming = Infragistics.Win.TextTrimming.EllipsisCharacter
+        resources.ApplyResources(Appearance8.FontData, "Appearance8.FontData")
+        resources.ApplyResources(Appearance8, "Appearance8")
+        Appearance8.ForceApplyResources = "FontData|"
+        Me.cmbSQLServer.DisplayLayout.Override.CellAppearance = Appearance8
+        Me.cmbSQLServer.DisplayLayout.Override.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.EditAndSelectText
+        Me.cmbSQLServer.DisplayLayout.Override.CellPadding = 0
+        Appearance9.BackColor = System.Drawing.SystemColors.Control
+        Appearance9.BackColor2 = System.Drawing.SystemColors.ControlDark
+        Appearance9.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element
+        Appearance9.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
+        Appearance9.BorderColor = System.Drawing.SystemColors.Window
+        resources.ApplyResources(Appearance9.FontData, "Appearance9.FontData")
+        resources.ApplyResources(Appearance9, "Appearance9")
+        Appearance9.ForceApplyResources = "FontData|"
+        Me.cmbSQLServer.DisplayLayout.Override.GroupByRowAppearance = Appearance9
+        resources.ApplyResources(Appearance10, "Appearance10")
+        resources.ApplyResources(Appearance10.FontData, "Appearance10.FontData")
+        Appearance10.ForceApplyResources = "FontData|"
+        Me.cmbSQLServer.DisplayLayout.Override.HeaderAppearance = Appearance10
+        Me.cmbSQLServer.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti
+        Me.cmbSQLServer.DisplayLayout.Override.HeaderStyle = Infragistics.Win.HeaderStyle.WindowsXPCommand
+        Appearance11.BackColor = System.Drawing.SystemColors.Window
+        Appearance11.BorderColor = System.Drawing.Color.Silver
+        resources.ApplyResources(Appearance11.FontData, "Appearance11.FontData")
+        resources.ApplyResources(Appearance11, "Appearance11")
+        Appearance11.ForceApplyResources = "FontData|"
+        Me.cmbSQLServer.DisplayLayout.Override.RowAppearance = Appearance11
+        Me.cmbSQLServer.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.[False]
+        Appearance12.BackColor = System.Drawing.SystemColors.ControlLight
+        resources.ApplyResources(Appearance12.FontData, "Appearance12.FontData")
+        resources.ApplyResources(Appearance12, "Appearance12")
+        Appearance12.ForceApplyResources = "FontData|"
+        Me.cmbSQLServer.DisplayLayout.Override.TemplateAddRowAppearance = Appearance12
+        Me.cmbSQLServer.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill
+        Me.cmbSQLServer.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate
+        Me.cmbSQLServer.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy
+        Me.cmbSQLServer.DisplayMember = "SqlServerName"
+        resources.ApplyResources(Me.cmbSQLServer, "cmbSQLServer")
+        Me.cmbSQLServer.Name = "cmbSQLServer"
+        Me.cmbSQLServer.ValueMember = "Path"
         '
         'ProjectManagement
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.Controls.Add(Me.cmbSQLServer)
         Me.Controls.Add(Me.ucmbProjectName)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -268,17 +396,17 @@ Partial Class ProjectManagement
         Me.Controls.Add(Me.cmbExe)
         Me.Controls.Add(Me.lblCompanyName)
         Me.Controls.Add(Me.cmbProjectName)
-        Me.Controls.Add(Me.cmbSQLServer)
         Me.Controls.Add(Me.cmbComanyName)
         Me.Name = "ProjectManagement"
-        CType(Me.UltraDataSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ucmbProjectName, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        CType(Me.UltraDataSource1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.ucmbProjectName,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.UltraDataSource2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.cmbSQLServer,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents cmbComanyName As System.Windows.Forms.ComboBox
-    Friend WithEvents cmbSQLServer As System.Windows.Forms.ComboBox
     Friend WithEvents lblCompanyName As System.Windows.Forms.Label
     Friend WithEvents cmbExe As System.Windows.Forms.ComboBox
     Friend WithEvents lblExe As System.Windows.Forms.Label
@@ -291,5 +419,6 @@ Partial Class ProjectManagement
     Friend WithEvents btnRunProgram As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
-
+    Friend WithEvents UltraDataSource2 As Infragistics.Win.UltraWinDataSource.UltraDataSource
+    Friend WithEvents cmbSQLServer As Infragistics.Win.UltraWinGrid.UltraCombo
 End Class
