@@ -370,12 +370,12 @@ Public Class ProjectManagement
     Private Sub cmbSQLServer_RowSelected(sender As Object, e As Infragistics.Win.UltraWinGrid.RowSelectedEventArgs) Handles cmbSQLServer.RowSelected
         Try
             sqlInsName = cmbSQLServer.Value.ToString.Replace("(localdb)\", "")
-
+            Button1.Text = "Start " & sqlInsName
+            Button2.Text = "Stop " & sqlInsName
             sqlName = e.Row.Cells("path").Value
         Catch ex As Exception
 
         End Try
-
     End Sub
     Private Sub ucmbProjectName_InitializeLayout(sender As Object, e As Infragistics.Win.UltraWinGrid.InitializeLayoutEventArgs) Handles ucmbProjectName.InitializeLayout
         ucmbProjectName.DisplayLayout.Bands(0).ColHeadersVisible = False
