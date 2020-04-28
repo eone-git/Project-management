@@ -9,3 +9,55 @@ C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project m
 C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.xml
 C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.pdb
 C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.exe.licenses
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\en-US\Project management.resources.dll
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\pt\Project management.resources.dll
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.MultiLang.resources
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.MultiLang.en-US.resources
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.MultiLang.pt.resources
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.Resources.pt.resources
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.ProjectManagement.en-US.resources
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.ProjectManagement.pt.resources
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\en-US\Project management.resources.dll
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\pt\Project management.resources.dll
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\si\Project management.resources.dll
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.MultiLang.si.resources
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.ProjectManagement.si.resources
+C:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\si\Project management.resources.dll
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Project management.exe.config
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Project management.exe
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Project management.pdb
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Project management.xml
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\en-US\Project management.resources.dll
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\pt\Project management.resources.dll
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\si\Project management.resources.dll
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Infragistics2.Shared.v11.1.dll
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Infragistics2.Win.Misc.v11.1.dll
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Infragistics2.Win.UltraWinDataSource.v11.1.dll
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Infragistics2.Win.UltraWinGrid.v11.1.dll
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Infragistics2.Win.v11.1.dll
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Infragistics2.Shared.v11.1.xml
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Infragistics2.Win.Misc.v11.1.xml
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Infragistics2.Win.UltraWinDataSource.v11.1.xml
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Infragistics2.Win.UltraWinGrid.v11.1.xml
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\bin\Debug\Infragistics2.Win.v11.1.xml
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.vbprojAssemblyReference.cache
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.MultiLang.resources
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.ProjectManagement.resources
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.Resources.resources
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.MultiLang.en-US.resources
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.MultiLang.pt.resources
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.MultiLang.si.resources
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.Resources.pt.resources
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.ProjectManagement.en-US.resources
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.ProjectManagement.pt.resources
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project_management.ProjectManagement.si.resources
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.vbproj.GenerateResource.cache
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.exe.licenses
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.vbproj.CoreCompileInputs.cache
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\en-US\Project management.resources.dll
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\pt\Project management.resources.dll
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\si\Project management.resources.dll
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.vbproj.CopyComplete
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.exe
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.xml
+H:\Users\SPIL\Documents\Visual Studio 2013\Projects\Project management\Project management\obj\Debug\Project management.pdb

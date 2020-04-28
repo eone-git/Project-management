@@ -1,4 +1,5 @@
 ﻿Imports System.IO
+Imports System.Data.SqlClient
 
 Public Class ProjectManagement
 
@@ -53,7 +54,7 @@ Public Class ProjectManagement
 
     Sub LoadVariableData()
         Try
-            projectName = ucmbProjectName.Value
+            projectName = ucmbProjectName.Value & "\"
             sqlName = cmbSQLServer.ValueMember
             companyName = cmbComanyName.ValueMember
             exeName = cmbExe.ValueMember
@@ -73,7 +74,7 @@ Public Class ProjectManagement
             Dim words As String()
             Dim isDuplicate As Boolean = False
 
-            fileReader = LoadDataToWrite(mainLocation & "ComanyData.txt")
+            fileReader = LoadDataToWrite(projectName & "ComanyData.txt")
             For Each line In fileReader
                 words = line.Split(New Char() {","c})
                 If words(0) <> "" Then
@@ -90,7 +91,7 @@ Public Class ProjectManagement
 
                 End If
             Next
-                cmbComanyName.DataSource = nameList
+            cmbComanyName.DataSource = nameList
 
         Catch ex As Exception
 
@@ -103,8 +104,8 @@ Public Class ProjectManagement
     Sub ValidateBasicData()
         Dim isLocationExsits As Boolean = False
         Try
-            If IsNothing(mainLocation) = False Then
-                If mainLocation <> "" Then
+            If IsNothing(projectName) = False Then
+                If projectName <> "" Then
                     isLocationExsits = True
                 End If
             End If
@@ -150,7 +151,7 @@ Public Class ProjectManagement
 
     Sub CustomersDetails()
         Try
-          
+
         Catch ex As Exception
 
         End Try
@@ -160,12 +161,14 @@ Public Class ProjectManagement
         Main_Branch = 1
         Main = 2
         USA_Branch = 3
+        Spil_Lite = 4
     End Enum
 
     Public Enum GetProjectCompanyNames As Integer
         Main_Branch = 1
         Main = 2
         USA_Branch = 3
+        Spil_Lite = 4
     End Enum
 
 #End Region
@@ -178,32 +181,50 @@ Public Class ProjectManagement
         Dim fileReader() As String = Nothing
         Dim reComanyDetails As String = ""
         Dim hasValue As Boolean = False
-
         Try
-            If ValidatePath(fileLocation) = True Then
-                fileReader = File.ReadAllLines(fileLocation)
-            End If
-
+            fileReader = File.ReadAllLines(fileLocation)
             Return fileReader
         Catch ex As Exception
             Return fileReader
         End Try
     End Function
 
-    Sub SetSQLparaNew()
+    Sub CreateComanyDataFile()
+        Try
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Sub SetSQLparaNew(ByRef targetFile As String, Optional ByRef referenceFile As String = "")
         Try
             Dim fileLocation As String
-            Dim fileReader() As String
+            Dim fileReader() As String = Nothing
             Dim dataToWrite As String = ""
+            Dim hasReference As Boolean = True
 
-            fileLocation = mainLocation & "ComanyData.txt"
-            fileReader = LoadDataToWrite(fileLocation)
+            'If hasReference = "" Then
+            '    hasReference = False
+            'End If
+
+            fileLocation = projectName & referenceFile
+            If ValidatePath(fileLocation) = True Then
+                fileReader = LoadDataToWrite(fileLocation)
+            Else
+                fileLocation = projectName & targetFile
+                If ValidatePath(fileLocation) = True Then
+                    fileReader = LoadDataToWrite(fileLocation)
+                End If
+                fileLocation = projectName & referenceFile
+                System.IO.File.WriteAllLines(fileLocation, fileReader)
+            End If
 
             For Each line As String In Filter(fileReader, companyName)
                 dataToWrite = line
             Next
 
-            fileLocation = ucmbProjectName.Value & "SQLparaNew.txt"
+            fileLocation = ucmbProjectName.Value & targetFile
             WriteDataToFile(dataToWrite, fileLocation)
 
         Catch ex As Exception
@@ -234,13 +255,13 @@ Public Class ProjectManagement
     Sub LoadProject()
         Try
             'Set SetSQLparaNew        
-            SetSQLparaNew()
+            SetSQLparaNew("SQLparaNew.txt", "ComanyData.txt")
 
             'Set SetSQLpara
 
             'Load Project
             Dim proc As New System.Diagnostics.Process()
-            proc = Process.Start(ucmbProjectName.Value & "SPIL Glass.exe", "")
+            proc = Process.Start(ucmbProjectName.Value & "\SPIL Glass.exe", "")
 
         Catch ex As Exception
 
@@ -301,11 +322,18 @@ Public Class ProjectManagement
         RunTheSPUIlGlass()
     End Sub
 
-#End Region
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Process.Start("cmd.exe", "/k sqllocaldb STOP " & Chr(34) & "SQL SERVER 2017" & Chr(34))
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Process.Start("cmd.exe", "/k sqllocaldb START " & Chr(34) & "SQL SERVER 2017" & Chr(34))
+    End Sub
 
     Private Sub ucmbProjectName_RowSelected(sender As Object, e As Infragistics.Win.UltraWinGrid.RowSelectedEventArgs) Handles ucmbProjectName.RowSelected
         Try
-            projectName = ucmbProjectName.Value
+            projectName = e.Row.Cells("path").Value & "\"
+            LoadCompanyNames()
         Catch ex As Exception
 
         End Try
@@ -326,4 +354,62 @@ Public Class ProjectManagement
 
         End Try
     End Sub
+
+#End Region
+
+    Function GetProjectNames() As String
+        Dim allProjectNames As String = ""
+        Try
+            For Each item As String In Directory.GetDirectories("c:\Program Files")
+                If allProjectNames = "" Then
+                    allProjectNames = item
+                Else
+                    allProjectNames = allProjectNames & "," & item
+                End If
+            Next
+            Return allProjectNames
+        Catch ex As Exception
+            Return allProjectNames
+        End Try
+    End Function
+
+    Sub setPrjectNamesTo()
+        Try
+            Dim prjectsList() As String
+            prjectsList = GetProjectNames().Split(New Char() {","c})
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Sub ResuoreDatabse()
+        Try
+            Dim sql As String = "RESTORE DATABASE [Northwind] " & _
+                                 "FROM DISK = N'C:SQL Server DatabasesNorthwind.bak' " & _
+                                 "WITH FILE = 1," & _
+                                 "Move N'Northwind' TO N'C:SQLNorthwind.mdf'," & _
+                                 "Move N'Northwind_log' TO N'C:SQLNorthwind_1.ldf'," & _
+                                 "NOUNLOAD, STATS = 10"
+
+            Dim cn As SqlConnection = New SqlConnection("Data Source=rrehak;Initial Catalog=master;Integrated Security=SSPI;")
+            cn.Open()
+            Dim cmd As SqlCommand = New SqlCommand(sql, cn)
+            cmd.ExecuteNonQuery()
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Sub SetSQLPath()
+        Try
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+
+
+
 End Class

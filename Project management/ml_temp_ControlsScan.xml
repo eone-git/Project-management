@@ -1,0 +1,288 @@
+<?xml version="1.0" standalone="yes"?>
+<ControlsScanResultsCache xmlns="http://tempuri.org/ControlsScanResults.xsd">
+  <ControlsScanResults>
+    <ControlsScanID>1</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>ProjectManagement.vb</FullName>
+    <ShortName>ProjectManagement.vb</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText />
+    <SortKey>ProjectManagement.vb</SortKey>
+    <NodeType>0</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>0</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName />
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>2</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>ProjectManagement.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Project Management</OriginalText>
+    <SortKey>AAProjectManagement.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>$this.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>3</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>btnLoadProject.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Load Project</OriginalText>
+    <SortKey>BAbtnLoadProject.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>btnLoadProject.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>4</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>btnRunProgram.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Run Program</OriginalText>
+    <SortKey>BAbtnRunProgram.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>btnRunProgram.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>5</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>Button1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Load Project</OriginalText>
+    <SortKey>BAButton1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>Button1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>6</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>Button2.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Run Program</OriginalText>
+    <SortKey>BAButton2.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>Button2.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>7</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>lblCompanyName.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Company Name</OriginalText>
+    <SortKey>BAlblCompanyName.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>lblCompanyName.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>8</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>lblExe.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Exe Name</OriginalText>
+    <SortKey>BAlblExe.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>lblExe.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>9</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>lblProjectName.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Project Name</OriginalText>
+    <SortKey>BAlblProjectName.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>lblProjectName.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>10</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>lblSQLServer.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>SQL Server</OriginalText>
+    <SortKey>BAlblSQLServer.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>lblSQLServer.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>11</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>ucmbProjectName.DisplayLayout.AddNewBox.Prompt</FullName>
+    <ShortName>Prompt</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Add ...</OriginalText>
+    <SortKey>BAucmbProjectName.DisplayLayout.AddNewBox.Prompt</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>ucmbProjectName.DisplayLayout.AddNewBox.Prompt</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>12</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>ucmbProjectName.DisplayLayout.Bands("Band 0").AddButtonCaption</FullName>
+    <ShortName>AddButtonCaption</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Band 0</OriginalText>
+    <SortKey>BAucmbProjectName.DisplayLayout.Bands("Band 0").AddButtonCaption</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>CType(ucmbProjectName.DisplayLayout.Bands("Band 0"),Infragistics.Win.UltraWinGrid.UltraGridBand).AddButtonCaption</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>13</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>ucmbProjectName.DisplayLayout.Bands("Band 0").Columns("Path").Header.Caption</FullName>
+    <ShortName>Caption</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Path</OriginalText>
+    <SortKey>BAucmbProjectName.DisplayLayout.Bands("Band 0").Columns("Path").Header.Caption</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>CType(CType(ucmbProjectName.DisplayLayout.Bands("Band 0"),Infragistics.Win.UltraWinGrid.UltraGridBand).Columns("Path"),Infragistics.Win.UltraWinGrid.UltraGridColumn).Header.Caption</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>14</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>ucmbProjectName.DisplayLayout.Bands("Band 0").Columns("ProjectID").Header.Caption</FullName>
+    <ShortName>Caption</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>ProjectID</OriginalText>
+    <SortKey>BAucmbProjectName.DisplayLayout.Bands("Band 0").Columns("ProjectID").Header.Caption</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>CType(CType(ucmbProjectName.DisplayLayout.Bands("Band 0"),Infragistics.Win.UltraWinGrid.UltraGridBand).Columns("ProjectID"),Infragistics.Win.UltraWinGrid.UltraGridColumn).Header.Caption</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>15</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>ucmbProjectName.DisplayLayout.Bands("Band 0").Columns("ProjectName").Header.Caption</FullName>
+    <ShortName>Caption</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>ProjectName</OriginalText>
+    <SortKey>BAucmbProjectName.DisplayLayout.Bands("Band 0").Columns("ProjectName").Header.Caption</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>CType(CType(ucmbProjectName.DisplayLayout.Bands("Band 0"),Infragistics.Win.UltraWinGrid.UltraGridBand).Columns("ProjectName"),Infragistics.Win.UltraWinGrid.UltraGridColumn).Header.Caption</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>16</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>ucmbProjectName.DisplayLayout.Bands("Band 0").Header.Caption</FullName>
+    <ShortName>Caption</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Band 0</OriginalText>
+    <SortKey>BAucmbProjectName.DisplayLayout.Bands("Band 0").Header.Caption</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>CType(ucmbProjectName.DisplayLayout.Bands("Band 0"),Infragistics.Win.UltraWinGrid.UltraGridBand).Header.Caption</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>17</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>ucmbProjectName.DisplayLayout.Bands("Band 0").SummaryFooterCaption</FullName>
+    <ShortName>SummaryFooterCaption</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Grand Summaries</OriginalText>
+    <SortKey>BAucmbProjectName.DisplayLayout.Bands("Band 0").SummaryFooterCaption</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>CType(ucmbProjectName.DisplayLayout.Bands("Band 0"),Infragistics.Win.UltraWinGrid.UltraGridBand).SummaryFooterCaption</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>18</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>ucmbProjectName.DisplayLayout.GroupByBox.Prompt</FullName>
+    <ShortName>Prompt</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Drag a column header here to group by that column.</OriginalText>
+    <SortKey>BAucmbProjectName.DisplayLayout.GroupByBox.Prompt</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>ucmbProjectName.DisplayLayout.GroupByBox.Prompt</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>19</ControlsScanID>
+    <Component>ProjectManagement.vb</Component>
+    <FullName>ucmbProjectName.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>UltraCombo1</OriginalText>
+    <SortKey>BAucmbProjectName.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>ucmbProjectName.Text</CompilerName>
+  </ControlsScanResults>
+</ControlsScanResultsCache>
