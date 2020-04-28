@@ -346,7 +346,7 @@ Public Class ProjectManagement
         RunTheSPUIlGlass()
     End Sub
 
-    Dim sqlInsName As String = 
+    Dim sqlInsName As String
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Process.Start("cmd.exe", "/k sqllocaldb STOP " & Chr(34) & sqlInsName & Chr(34))
