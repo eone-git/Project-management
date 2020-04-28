@@ -430,7 +430,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="Button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 28</value>
+    <value>139, 61</value>
   </data>
   <data name="Button1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -463,7 +463,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="Button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 28</value>
+    <value>140, 61</value>
   </data>
   <data name="Button2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -526,7 +526,7 @@
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>319, 350</value>
+    <value>319, 380</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

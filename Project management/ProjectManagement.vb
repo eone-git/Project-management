@@ -29,7 +29,8 @@ Public Class ProjectManagement
     Sub Load()
         Try
             LoadFormOpeningData()
-            MySub
+            MySub()
+            SetBuutonText()
         Catch ex As Exception
 
         End Try
@@ -369,10 +370,18 @@ Public Class ProjectManagement
 
     Private Sub cmbSQLServer_RowSelected(sender As Object, e As Infragistics.Win.UltraWinGrid.RowSelectedEventArgs) Handles cmbSQLServer.RowSelected
         Try
+            sqlName = e.Row.Cells("path").Value
+            SetBuutonText()
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Sub SetBuutonText()
+        Try
             sqlInsName = cmbSQLServer.Value.ToString.Replace("(localdb)\", "")
             Button1.Text = "Start " & sqlInsName
             Button2.Text = "Stop " & sqlInsName
-            sqlName = e.Row.Cells("path").Value
         Catch ex As Exception
 
         End Try
