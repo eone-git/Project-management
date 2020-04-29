@@ -24,9 +24,9 @@ Partial Class ProjectManagement
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ProjectManagement))
-        Dim UltraDataColumn37 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("ID")
-        Dim UltraDataColumn38 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("ProjectName")
-        Dim UltraDataColumn39 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Path")
+        Dim UltraDataColumn1 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("ID")
+        Dim UltraDataColumn2 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("ProjectName")
+        Dim UltraDataColumn3 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Path")
         Dim Appearance25 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim UltraGridBand1 As Infragistics.Win.UltraWinGrid.UltraGridBand = New Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1)
         Dim UltraGridColumn1 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("ID")
@@ -43,9 +43,9 @@ Partial Class ProjectManagement
         Dim Appearance34 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance35 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance36 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim UltraDataColumn40 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("ID")
-        Dim UltraDataColumn41 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("SqlServerName")
-        Dim UltraDataColumn42 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Path")
+        Dim UltraDataColumn4 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("ID")
+        Dim UltraDataColumn5 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("SqlServerName")
+        Dim UltraDataColumn6 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Path")
         Dim Appearance1 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim UltraGridBand2 As Infragistics.Win.UltraWinGrid.UltraGridBand = New Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1)
         Dim UltraGridColumn4 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("ID")
@@ -125,11 +125,10 @@ Partial Class ProjectManagement
         '
         'UltraDataSource1
         '
-        Me.UltraDataSource1.Band.Columns.AddRange(New Object() {UltraDataColumn37, UltraDataColumn38, UltraDataColumn39})
+        Me.UltraDataSource1.Band.Columns.AddRange(New Object() {UltraDataColumn1, UltraDataColumn2, UltraDataColumn3})
         Me.UltraDataSource1.Rows.AddRange(New Object() {New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("1",Object), CType("ProjectName",Object), CType("Main Branch",Object), CType("Path",Object), CType("D:\SPIL Glass Main Projects\SPIL Glass Branch For Live\SPIL Glass\SPIL_Glass\bin\"& _ 
                             "Debug\",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("2",Object), CType("ProjectName",Object), CType("Main",Object), CType("Path",Object), CType("D:\SPIL Glass Main Projects\SPIL Glass Live\SPIL Glass\SPIL_Glass\bin\Debug\",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("3",Object), CType("ProjectName",Object), CType("USA Branch",Object), CType("Path",Object), CType("D:\SPIL Glass Main Projects\New folder (3)\SPIL Glass\SPIL_Glass\bin\Debug\",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("4",Object), CType("ProjectName",Object), CType("Chevron",Object), CType("Path",Object), CType("D:\SPIL Glass Main Projects\SPIL Glass Chevron Active\Evolution_Custom\Evolution_"& _ 
-                            "Custom\bin\Debug\",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("5",Object), CType("ProjectName",Object), CType("Lite",Object), CType("Path",Object), CType("D:\SPIL Glass Main Projects\SPIL Glass Lite\SPIL Glass\SPIL Glass\SPIL_Glass\bin\"& _ 
-                            "Debug",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("6",Object), CType("ProjectName",Object), CType("GIT Main Branch",Object), CType("Path",Object), CType("O:\SPIL\Source\Repos\SPIL Glass\SPIL Glass\SPIL_Glass\bin\Debug\",Object)})})
+                            "Custom\bin\Debug\",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("5",Object), CType("ProjectName",Object), CType("GIT SPIL Glass Lite",Object), CType("Path",Object), CType("O:\SPIL\Source\Repos\SPIL Lite\SPIL Glass\SPIL_Glass\bin\Debug\",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("6",Object), CType("ProjectName",Object), CType("GIT SPIL Glass",Object), CType("Path",Object), CType("O:\SPIL\Source\Repos\SPIL Glass\SPIL Glass\SPIL_Glass\bin\Debug\",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("7",Object), CType("ProjectName",Object), CType("GIT SPIL Glass Inventory",Object), CType("Path",Object), CType("O:\SPIL\Source\Repos\SPIL Glass Inventory Module\DLL\",Object)})})
         '
         'ucmbProjectName
         '
@@ -270,7 +269,7 @@ Partial Class ProjectManagement
         '
         'UltraDataSource2
         '
-        Me.UltraDataSource2.Band.Columns.AddRange(New Object() {UltraDataColumn40, UltraDataColumn41, UltraDataColumn42})
+        Me.UltraDataSource2.Band.Columns.AddRange(New Object() {UltraDataColumn4, UltraDataColumn5, UltraDataColumn6})
         Me.UltraDataSource2.Rows.AddRange(New Object() {New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("1",Object), CType("SqlServerName",Object), CType("SQL 2014",Object), CType("Path",Object), CType("SPIL-PC13\MSSQLSERVER2014",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("2",Object), CType("SqlServerName",Object), CType("Local DB SQL 2017",Object), CType("Path",Object), CType("(localdb)\SQL SERVER 2017",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("3",Object), CType("SqlServerName",Object), CType("Local DB SQL 2019",Object), CType("Path",Object), CType("(localdb)\sql_2019",Object)}), New Infragistics.Win.UltraWinDataSource.UltraDataRow(New Object() {CType("ID",Object), CType("4",Object), CType("SqlServerName",Object), CType("SQL 2019",Object), CType("Path",Object), CType("SPIL-PC13\MS_SQL_2019",Object)})})
         '
         'cmbSQLServer
